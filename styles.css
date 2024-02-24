@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    min-width: 100vw;
+    min-height: 100vh;
+}
+#main {
+    background-color: chocolate;
+    padding: 50px 200px;
+    border: 2px solid red;
+    margin: 0 auto;
+    width: 40%;
+}
+.player {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+button {
+    background-color: aqua;
+    width: 120px;
+    height: 80px;
+}
+.result {
+    text-align: center;
+    font-size: large;
+    margin-top: 30px;
+}
+.computer-result{
+    text-align: center;
+    font-size: large;
+    margin-top: 30px;
+}
