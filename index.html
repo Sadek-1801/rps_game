@@ -4,21 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock_Paper_Scissors</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <section id="main">
+    <section id="main" >
         <div class="player">
-            <button>Rock</button>
-            <button>Paper</button>
-            <button>Scissors</button>
+            <button class="btn" style="font-size: 24px;">Rock</button>
+            <button class="btn" style="font-size: 24px;">Paper</button>
+            <button class="btn" style="font-size: 24px;">Scissors</button>
         </div>
-        <div class="result">
-            <p>You've Won the game</p>
+        <div class="result-btn">
+            <button>Play Count: <span class="chance"></span></button>
+            <button>Your Point: <span class="point"></span></button>
+
         </div>
-        <div class="computer-result">
-            <p>You've Won the game</p>
+        <div class="result-para">
+            <p class="result"></p>
+        </div>
+        <div class="result-para">
+            <p class="computer-result"></p>
+        </div>
+        <div class="result-para">
+            <p class="final-result"></p>
+        </div>
+        <div id="final-btn-div">
+            <button onclick="resetBtn()" id="final-btn" class="" hidden>Play Again</button>
         </div>
     </section>
-    <script href="rps.js"></script>
+    <script src="rps.js"></script>
 </body>
 </html>

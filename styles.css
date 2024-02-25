@@ -5,13 +5,18 @@
 body {
     min-width: 100vw;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 #main {
     background-color: chocolate;
-    padding: 50px 200px;
+    padding: 200px;
     border: 2px solid red;
     margin: 0 auto;
     width: 40%;
+    
 }
 .player {
     display: flex;
@@ -19,18 +24,44 @@ body {
     align-items: center;
     gap: 20px;
 }
-button {
+.btn {
     background-color: aqua;
     width: 120px;
     height: 80px;
+    border-radius: 8px;
+}
+.result-btn {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    font-size: 2rem;
+}
+.result-btn button {
+    margin-bottom: 30px;
+}
+.result-btn button, #final-btn {
+    background-color: cornflowerblue;
+    padding: 20px 30px;
+    border: none;
+    border-radius: 12px;
+    font-size: 24px;
 }
 .result {
     text-align: center;
     font-size: large;
-    margin-top: 30px;
 }
 .computer-result{
     text-align: center;
     font-size: large;
-    margin-top: 30px;
+}
+.result-para p{
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+#final-btn-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
